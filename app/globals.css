@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Premium Dark Theme */
+    --background: 222 47% 7%;
+    /* Deep navy #0A0F1C */
+    --foreground: 210 40% 98%;
+    /* Off-white #F8FAFC */
+
+    --card: 222 47% 11%;
+    /* Slightly lighter navy #10172A */
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 238 83% 67%;
+    /* Indigo #6366F1 */
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 217 24% 17%;
+    /* Slate #1E293B */
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 24% 17%;
+    --muted-foreground: 215 20.2% 65.1%;
+    /* Gray-400 #94A3B8 */
+
+    --accent: 217 24% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 24% 17%;
+    /* Slate #1E293B */
+    --input: 217 24% 17%;
+    --ring: 238 83% 67%;
+    /* Indigo focus ring */
+
+    --radius: 0.75rem;
+    /* Slightly more rounded */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    /* Soft ambient background */
+    background-image: radial-gradient(circle at top center, rgba(99, 102, 241, 0.08) 0%, transparent 50%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Subtle scrollbar for dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground));
+}
