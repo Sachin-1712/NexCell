@@ -1,6 +1,6 @@
 # NexCell AI Activity Dashboard
 
-**Task Objective**: *Refining Dashboard UI*. Upgraded the visual design of the existing NexCell AI Activity Dashboard to a premium, professional dark-theme SaaS interface. Applied a refined deep navy and muted indigo color palette, improved typography and spacing, redesigned UI elements (stat cards, filters, tables, modals), and added subtle animations and hover states while maintaining core functionality, responsiveness, and strict TypeScript adherence.
+**Task Objective**: *Refining Dashboard UI*. Upgraded the visual design of the existing NexCell AI Activity Dashboard to a professional  interface. Applied a refined deep navy and muted indigo color palette, improved typography and spacing, redesigned UI elements (stat cards, filters, tables, modals), and added subtle animations and hover states while maintaining core functionality, responsiveness, and strict TypeScript adherence.
 
 A clean, single-page AI activity monitoring dashboard built with **Next.js 14 (App Router)**, **TypeScript**, **Tailwind CSS**, and **shadcn/ui**.
 
